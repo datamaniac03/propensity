@@ -12,7 +12,8 @@ rho <- as.matrix(sort(abs(rho[,1]), decreasing=T))
 rownames(rho)
 
 fit <- glm(train$target ~ 
-             train$var1 + train$var2
+             train$var1 + 
+             train$var2)
 R2 <- cor(train$target, predict(fit))^2
 
 testMargin <- coef(fit)[1] + 
