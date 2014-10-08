@@ -1,4 +1,4 @@
-base-linear-regression
+propensity
 ======================
 
-Basic setup for linear regression in R
+Basic tools for propensity modelling
